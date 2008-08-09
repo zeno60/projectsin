@@ -16,4 +16,5 @@ struct vertex
 	vertex(vector3df p, vector3df n, color c, vector2df t):mPosition(p),mNormal(n),mColor(c),mTexCoords(t){ }
 };
 
+
 #endif

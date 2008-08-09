@@ -190,6 +190,18 @@
 				>
 			</File>
 			<File
+				RelativePath=".\IVideoDevice.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MeshBuffer.h"
+				>
+			</File>
+			<File
+				RelativePath=".\NullDriver.h"
+				>
+			</File>
+			<File
 				RelativePath=".\triangle.h"
 				>
 			</File>

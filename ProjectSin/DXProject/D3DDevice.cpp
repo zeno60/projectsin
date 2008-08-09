@@ -369,7 +369,7 @@ void D3DDevice::UpdateLights()
 	}
 }
 
-void D3DDevice::AddLight(const D3DXCOLOR& vColor, const D3DXVECTOR3 vDir)
+void D3DDevice::AddLight(const D3DXCOLOR& vColor, const vector3df vDir)
 {
 	if(m_iNumLights < 10)
 	{		

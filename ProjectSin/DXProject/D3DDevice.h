@@ -96,7 +96,7 @@ public:
 
 	void ClearDepthStencil(const float fDepth, const UINT8 uiStencil);
 	
-	void AddLight(const D3DXCOLOR& vColor, const D3DXVECTOR3 vDir);
+	void AddLight(const D3DXCOLOR& vColor, const vector3df vDir);
 
 	static D3DDevice* getInstance();
 	static void Create(HWND hWnd, int width, int height);

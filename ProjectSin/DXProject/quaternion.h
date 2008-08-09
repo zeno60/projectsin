@@ -30,15 +30,15 @@ public:
 	{
 		float angle;
 
-		angle = x * 0.5;
+		angle = x * 0.5f;
 		float sr = (float)sin(angle);
 		float cr = (float)cos(angle);
 
-		angle = y * 0.5;
+		angle = y * 0.5f;
 		float sp = (float)sin(angle);
 		float cp = (float)cos(angle);
 
-		angle = z * 0.5;
+		angle = z * 0.5f;
 		float sy = (float)sin(angle);
 		float cy = (float)cos(angle);
 

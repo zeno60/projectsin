@@ -18,7 +18,7 @@ public:
 	void setSize(const float r) { mSize = r; }
 
 private:
-	int mSize;
+	float mSize;
 	static goc_id_type mFamilyId;
 
 	ID3D10Buffer* vertexBuffer;
