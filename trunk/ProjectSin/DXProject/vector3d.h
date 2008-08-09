@@ -107,11 +107,6 @@ public:
 		z = a.z;
 		return *this;
 	}
-
-	D3DXVECTOR3& toD3DXVECTOR3()
-	{
-		return D3DXVECTOR3(x, y, z);
-	}
 }; 
 
 typedef vector3d<float> vector3df;

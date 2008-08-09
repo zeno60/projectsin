@@ -52,7 +52,7 @@ void D3DSample::SceneInit()
 	//go = GOTManager::getInstance()->createGO("Test");
 	//objects.push_back(go);
 
-	Graphics()->AddLight(D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f), vector3df(0.0f, 10.0f, 0.0f).toD3DXVECTOR3());
+	Graphics()->AddLight(D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f), vector3df(0.0f, 10.0f, 0.0f));
 	//Graphics()->AddLight(D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f), vector3df(1.0f, 0.0f, 0.0f).toD3DXVECTOR3());
 }
 

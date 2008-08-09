@@ -2,7 +2,7 @@
 
 Camera::Camera()
 {
-	type = Type::LANDOBJECT;
+	type = LANDOBJECT;
 
 	position = vector3df(0.0f, 0.0f, -10.0f);
 	right = vector3df(1.0f, 0.0f, 0.0f);
@@ -32,18 +32,18 @@ void Camera::EventHandler(const Event &e)
 {
 	if(type == TRACKBALL)
 	{
-		if(e.Type == E_EVENT_TYPE::E_MOUSEPRESS)
+		if(e.Type == E_MOUSEPRESS)
 		{
-			if(e.MouseInput.Type == MOUSE_INPUT_TYPE::LMOUSE_PRESS)
+			if(e.MouseInput.Type == LMOUSE_PRESS)
 			{
 				beginDrag(e.MouseInput.X,e.MouseInput.Y);
 			}
-			else if(e.MouseInput.Type == MOUSE_INPUT_TYPE::LMOUSE_RELEASE)
+			else if(e.MouseInput.Type == LMOUSE_RELEASE)
 			{
 				isDragging = false;
 			}
 		}
-		else if(e.Type == E_EVENT_TYPE::E_MOUSEMOVE && isDragging)
+		else if(e.Type == E_MOUSEMOVE && isDragging)
 		{
 			drag(e.MouseInput.X,e.MouseInput.Y);
 		}
@@ -78,7 +78,7 @@ void Camera::drag(int x, int y)
 	currentVector = ProjectToSphere(ScreenToNDC(x, y));
 
 	vector3df axis = startVector.crossProduct(currentVector);
-	double theta = acos(startVector.dotProduct(currentVector));
+	float theta = acos(startVector.dotProduct(currentVector));
 
     quaternion delta(axis.x, axis.y, axis.z, -theta);
 
